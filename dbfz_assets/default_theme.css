@@ -1,0 +1,150 @@
+:root {
+	--main-bg0-colour: #000;
+	--content-bg-colour: rgba(100%, 100%, 100%, 0.75);
+	--text-colour: #FFF;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	height: 100%;
+}
+
+body {
+	color: var(--text-colour);
+	background-color: var(--main-bg0-colour);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--text-colour);
+	text-decoration:none;
+	position:relative;
+}
+
+#container {
+	max-width: 1710px;
+	overflow: hidden;
+	box-shadow: 0px 0px 80px var(--content-bg-colour);
+	border-radius: 100px;
+	border: solid 3px var(--content-bg-colour);
+}
+
+#content {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: var(--main-bg0-colour);
+}
+
+#charcont {
+	background: linear-gradient(0deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,1) 50%,rgba(0,0,0,.1) 100%);
+	display: flex;
+}
+
+.chardiv {
+	display: flex;
+	justify-content: center;
+	width: 570px;
+	height: 700px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.chardiv pre {
+	margin: 0;
+	font-size: 4em;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	z-index: 4;
+	top: 20px;
+	position: absolute;
+	text-shadow: 0px 4px 4px #000;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000
+}
+
+.portrait {
+	height: 768px;
+	margin: -68px -3000px;
+	transform: scale3d(-1, 1, 1);
+}
+
+.assist {
+    z-index: 4;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -67px;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,.5) 24%, transparent 40%);
+    padding: 50px;
+}
+
+/* Ungabunga different screen sizes */
+@media only screen and (max-width :1730px) {
+	.chardiv {
+		width:435px;
+		height:500px;
+	}
+	.portrait {
+		height:590px;
+	}
+}
+
+@media only screen and (max-width :1330px) {
+	#charcont {
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		height:100%;
+	}
+
+	.chardiv {
+		overflow: hidden;
+		height: 100%;
+		border-bottom: 1px solid var(--text-colour);
+		align-items: self-end;
+	}
+
+	.portrait {
+		max-height: 500px;
+	}
+
+	.chardiv pre {
+		margin: 0;
+		font-size:2em;
+		-webkit-text-stroke-width: 0px;
+	}
+
+	.assist {
+		left: 15%;
+	}
+
+	#container {
+		margin: 0px auto;
+		height:100%;
+		border-radius:0;
+		border:none;
+	}
+
+	#content {
+		height: 100%;
+		margin: auto;
+		border-radius: 0;
+		box-sizing: border-box;
+	}
+}
+
+@media only screen and (max-width :800px) {
+	.portrait {
+		max-height: 400px;
+	}
+}
