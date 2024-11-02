@@ -39,7 +39,7 @@ function randomize() {
 		var newPortrait = document.createElement("img");
 		newPortrait.classList.add("portrait");
 		newPortrait.setAttribute("alt", c_name[rc]);
-		newPortrait.setAttribute("src", "./dbfz_assets/renders/" + c_id[rc]);
+		newPortrait.setAttribute("src", "./dbfz_assets/dbszicons/" + c_id[rc]);
 
 		// Glue it all together
 		newChar.appendChild(newPre);
