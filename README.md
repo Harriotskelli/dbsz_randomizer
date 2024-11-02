@@ -1,8 +1,7 @@
-# [DBFZ Randomizer](https://dobosken.github.io/dbfz_randomizer/)
+# [DBSZ Randomizer](https://Harriotskelli.github.io/dbsz_randomizer/)
 
-Don't feel like tryharding now that DBFZ has devolved into a party game?
-
-Embrace degeneracy and generate a random team to go ungabunga with!
+Bandai forgot to ship the game with this function so here it is
+thanks to the [dbfz randomizer](https://dobosken.github.io/dbfz_randomizer/) for idea and code 
 
 ---
 
