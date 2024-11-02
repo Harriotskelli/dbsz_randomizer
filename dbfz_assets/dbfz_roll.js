@@ -23,12 +23,6 @@ function randomize() {
 	for (var i=0; i<5; ++i) {
 		var newChar = document.createElement("div");
 		newChar.classList.add("chardiv");
-		var newPre = document.createElement("pre");
-		(i == 0) ? newPre.innerHTML = "First" : null;
-		(i == 1) ? newPre.innerHTML = "Second" : null;
-		(i == 2) ? newPre.innerHTML = "Third" : null;
-		(i == 3) ? newPre.innerHTML = "Forth" : null;
-		(i == 4) ? newPre.innerHTML = "Fifth" : null;
 
 		//Pick a random character. Reroll on duplicate
 		var rc;
@@ -36,6 +30,10 @@ function randomize() {
 			rc = randInt(0,c_name.length-1);
 		} while (findInArray(rc))
 		rx[rx.length] = rc;
+
+		// Put the name for the character
+		var newPre = document.createElement("pre");
+		newPre.innerHTML = c_name[rc];
 
 		// Create portrait for chosen character
 		var newPortrait = document.createElement("img");
