@@ -41,17 +41,9 @@ function randomize() {
 		newPortrait.setAttribute("alt", c_name[rc]);
 		newPortrait.setAttribute("src", "./dbfz_assets/renders/" + c_id[rc] + ".png");
 
-		// Create assist for chosen character
-		var ra = randInt(0,c_assist.length-1);
-		var newAssist = document.createElement("img");
-		newAssist.classList.add("assist");
-		newAssist.setAttribute("alt", c_assist[ra]);
-		newAssist.setAttribute("src", "./dbfz_assets/" + c_assist[ra] + ".png");
-
 		// Glue it all together
 		newChar.appendChild(newPre);
 		newChar.appendChild(newPortrait);
-		newChar.appendChild(newAssist);
 		charcont.appendChild(newChar);
 	}
 
