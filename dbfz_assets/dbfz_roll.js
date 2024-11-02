@@ -24,9 +24,11 @@ function randomize() {
 		var newChar = document.createElement("div");
 		newChar.classList.add("chardiv");
 		var newPre = document.createElement("pre");
-		(i == 0) ? newPre.innerHTML = "Point" : null;
-		(i == 1) ? newPre.innerHTML = "Mid" : null;
-		(i == 2) ? newPre.innerHTML = "Anchor" : null;
+		(i == 0) ? newPre.innerHTML = "First" : null;
+		(i == 1) ? newPre.innerHTML = "Second" : null;
+		(i == 2) ? newPre.innerHTML = "Third" : null;
+		(i == 3) ? newPre.innerHTML = "Forth" : null;
+		(i == 4) ? newPre.innerHTML = "Fifth" : null;
 
 		//Pick a random character. Reroll on duplicate
 		var rc;
