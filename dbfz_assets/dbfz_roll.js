@@ -20,7 +20,7 @@ function randomize() {
 	charcont.innerHTML = '';
 	rx=[];
 
-	for (var i=0; i<3; ++i) {
+	for (var i=0; i<5; ++i) {
 		var newChar = document.createElement("div");
 		newChar.classList.add("chardiv");
 		var newPre = document.createElement("pre");
