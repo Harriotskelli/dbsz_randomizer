@@ -67,7 +67,7 @@ function randomize() {
 		var rc;
 		do {
 			rc = randInt(0,c_name.length-1);
-		} while (findInArray(rc) && checkInArray(rc))
+		} while (findInArray(rc) || checkInArray(rc))
 		rx[rx.length] = rc;
 
 		// Put the name for the character
