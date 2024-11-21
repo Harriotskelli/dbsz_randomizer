@@ -1,4 +1,3 @@
-<!-- write cache settings -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +10,36 @@
 </head>
 <body>
 <script type="text/javascript" src="./dbfz_assets/dbfz_roll.js"></script>
-<div id="container" onclick="randomize()"><div id="content"><div id="charcont"></div></div></div>
+<div id="container" onclick="randomize()">
+<fieldset>
+<legend>Options:</legend>
+<div>
+  <label for="Teamsize">Choose a Teamsize:</label>
+  <select name="Teamsize" id="teamsize">
+    <option value="1">1</option>
+    <option value="3">3</option>
+    <option value="5">5</option>
+  </select>
+  <br>
+    <input type="checkbox" id="nogoku" name="nogoku">
+    <label for="nogoku">Remove all Goku's (includes fusions)</label>
+  </div>
+  <br>
+  <div>
+    <input type="checkbox" id="novegeta" name="novegeta">
+    <label for="novegeta">Remove all Vegeta's (includes fusions)</label>
+  </div>
+  <br>
+    <div>
+    <input type="checkbox" id="nobigs" name="nobigs">
+    <label for="nobigs">Remove all Huge Characters (Great Apes, etc)</label>
+  </div>
+   <br>
+    <div>
+    <input type="checkbox" id="nofusion" name="nobigs">
+    <label for="nofusion">Remove all Fusions (Potara and Dance only)</label>
+  </div>
+</fieldset><br>
+<div id="content"><div id="charcont"></div></div></div>
 </body>
 </html>
