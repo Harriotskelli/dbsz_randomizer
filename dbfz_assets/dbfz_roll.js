@@ -27,13 +27,13 @@ function checkInArray(val) {
 		if (checks.includes("nogoku")){
 			if (gokulist.includes(val)) return 1;
 		}
-		if (checks.includes("novegeta"){
+		if (checks.includes("novegeta")){
 			if (vegetalist.includes(val)) return 1;
 		}
-		if (checks.includes("nobigs"){
+		if (checks.includes("nobigs")){
 			if (biglist.includes(val)) return 1;
 		} 
-		if (checks.includes("nofusion"){
+		if (checks.includes("nofusion")){
 			if (fusionlist.includes(val)) return 1;
 		} 
 	return 0;
